@@ -7,27 +7,27 @@
     color: black;
   }
   body a {
-    color: #c7b29c;
+    color: #dfdfdf;
   }
   body a:hover {
-    color: #7a6d60;
+    color: #bbb7b7;
   }
   body .menu button {
     background-color: whitesmoke;
     color: black;
   }
   body .menu button.active, body .menu button:hover {
-    background-color: #7a6d60;
+    background-color: #bbb7b7;
   }
   body .title {
     color: #5e484a;
   }
   body .section .section-content .button {
     color: black;
-    background-color: #1a1a1a;
+    background-color: #dfdfdf;
   }
   body .section .section-content .button:hover {
-    background-color: #242424;
+    background-color: #bbb7b7;
   }
 }
 
