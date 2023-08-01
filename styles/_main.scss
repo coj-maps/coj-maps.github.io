@@ -1,0 +1,85 @@
+* {
+    font-family: "DM Sans", "Pontano Sans", sans-serif;
+}
+
+body {
+    margin: 50px;
+    font-size: 20px;
+
+    @media screen and (max-width: 540px) {
+        margin: 15px;
+        font-size: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+
+    @media screen and (max-width: 185px) {
+        & {
+            display: inline;
+        }
+    }
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    word-wrap: anywhere;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.menu {
+    margin-bottom: 30px;
+}
+
+.button-round {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: auto 3px;
+    background: none;
+    border: none;
+    border-radius: 16px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.title {
+    margin: 0;
+    font-size: 60px;
+    cursor: context-menu;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.section {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    .section-content {
+        padding: 0 30px;
+    }
+}
+
+ul {
+    li {
+        margin-bottom: 10px;
+    }
+}

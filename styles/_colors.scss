@@ -1,0 +1,92 @@
+/** COLORS
+ *  Colors for themes (light, dark).
+ */
+
+// theme
+// 1 = light
+// 2 = dark
+@mixin theme-colors($theme: false) {
+    // -> init colors
+    // dark colors
+    $color_0: rgb(6, 6, 6);
+    $color_1: rgb(12, 12, 12);
+    $color_2: rgb(16, 16, 16);
+    $color_3: rgb(26, 26, 26);
+    $color_4: rgb(36, 36, 36);
+    $color_text: rgb(255, 255, 255);
+    $color_link: rgb(199, 178, 156);
+    $color_link_hover: rgb(122, 109, 96);
+    $color_title: rgb(122, 109, 96);
+
+    // light colors
+    @if $theme==1 {
+        $color_0: rgb(245, 245, 245);
+        $color_1: rgb(255, 255, 255);
+        $color_2: rgb(255, 245, 245);
+        $color_2: rgb(255, 245, 245);
+        $color_2: rgb(255, 245, 245);
+        $color_text: rgb(0, 0, 0);
+        $color_link: rgb(199, 178, 156);
+        $color_link_hover: rgb(122, 109, 96);
+        $color_title: rgb(94, 72, 74);
+    }
+
+    & {
+        background-color: $color_2;
+        color: $color_text;
+    }
+
+    a {
+        color: $color_link;
+
+        &:hover {
+            color: $color_link_hover;
+        }
+    }
+
+    .menu {
+        button {
+            background-color: $color_0;
+            color: $color_text;
+
+            &.active,
+            &:hover {
+                background-color: $color_link_hover;
+            }
+        }
+    }
+
+    .title {
+        color: $color_title;
+    }
+
+
+    .section {
+        .section-content {
+            .button {
+                color: $color_text;
+                background-color: $color_3;
+
+                &:hover {
+                    background-color: $color_4;
+                }
+            }
+        }
+    }
+}
+
+// DARK/LIGHT MODE
+
+// light mode
+@media (prefers-color-scheme: light) {
+    body {
+        @include theme-colors($theme: 1);
+    }
+}
+
+// dark mode
+@media (prefers-color-scheme: dark) {
+    body {
+        @include theme-colors($theme: 2);
+    }
+}
