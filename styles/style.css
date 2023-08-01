@@ -13,7 +13,7 @@
     color: #bbb7b7;
   }
   body .menu button {
-    background-color: whitesmoke;
+    background-color: #ebebeb;
     color: black;
   }
   body .menu button.active, body .menu button:hover {
