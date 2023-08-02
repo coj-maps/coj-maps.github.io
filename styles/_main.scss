@@ -58,7 +58,7 @@ header {
 
 .title {
     margin: 0;
-    font-size: 60px;
+    font-size: 50px;
     cursor: context-menu;
 }
 
@@ -78,7 +78,9 @@ header {
     }
 }
 
-ul {
+ul,
+ol {
+
     li {
         margin-bottom: 10px;
     }

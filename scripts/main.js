@@ -2,7 +2,7 @@ const el = {
     menuButton: document.querySelectorAll('main .menu .button-round'),
 };
 
-var currentSection = '2023-07';
+var currentSection = 'info';
 
 el.menuButton.forEach(menuButton => menuButton.addEventListener('click', function (event) {
     const id = event.target.dataset.id;
